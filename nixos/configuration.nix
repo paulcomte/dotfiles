@@ -21,7 +21,7 @@
     mode = "0644";
     source = (pkgs.formats.json { }).generate "supergfxd.conf" {
       mode = "Integrated";
-      vfio_enable = false;
+      vfio_enable = true;
       vfio_save = false;
       always_reboot = false;
       no_logind = true;

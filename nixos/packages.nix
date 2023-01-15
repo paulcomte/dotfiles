@@ -32,6 +32,8 @@
     # Asus settings
     asusctl
     supergfxctl
+    light
+    xorg.xrandr
   ];
 
   fonts.fonts = with pkgs; [

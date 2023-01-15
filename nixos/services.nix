@@ -4,8 +4,6 @@
 
   virtualisation.libvirtd.enable = true;
 
-  systemd.services."supergfxd".path = [ pkgs.lsof ];
-
   services = {
     logind.extraConfig = ''
       # don’t shutdown when power button is short-pressed
@@ -19,26 +17,26 @@
     zfs.autoSnapshot.enable = true;
     zfs.autoScrub.enable = true;
     mullvad-vpn.enable = true;
-    asusd.enable = true;
-    supergfxd.enable = true;
+    #asusd.enable = true;
+    #supergfxd.enable = true;
 
-    # xserver = {
-    #   enable = true;
-    #   layout = "fr";
-    #   libinput.enable = true;
+    xserver = {
+      enable = true;
+      layout = "fr";
+      libinput.enable = true;
 
-    #   # videoDrivers = [ "nvidia" ];
+      videoDrivers = [ "nvidia" ];
 
-    #   displayManager = {
-    #     gdm = {
-    #       enable = true;
-    #       wayland = true;
-    #     };
-    #     #sddm.enable = true;
-    #     defaultSession = "hyprland";
-    #   };
+      displayManager = {
+        gdm = {
+          enable = true;
+          wayland = true;
+        };
+        #sddm.enable = true;
+        defaultSession = "hyprland";
+      };
 
-    # };
+    };
 
     openssh.enable = true;
     vnstat.enable = true;
