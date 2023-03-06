@@ -5,6 +5,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    libimobiledevice
     feh
     ranger
     pavucontrol # audio managerm
@@ -32,7 +33,6 @@
     # Asus settings
     asusctl
     supergfxctl
-    light
     xorg.xrandr
   ];
 
@@ -40,6 +40,7 @@
     anonymousPro
     unifont
     noto-fonts-emoji
+    nanum
     (nerdfonts.override { fonts = [ "FiraCode" "JetBrainsMono" "UbuntuMono" ]; })
   ];
 

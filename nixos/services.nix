@@ -17,8 +17,13 @@
     zfs.autoSnapshot.enable = true;
     zfs.autoScrub.enable = true;
     mullvad-vpn.enable = true;
-    #asusd.enable = true;
-    #supergfxd.enable = true;
+    asusd.enable = true;
+    supergfxd.enable = true;
+
+    usbmuxd = {
+      enable = true;
+      package = pkgs.usbmuxd2;
+    };
 
     xserver = {
       enable = true;
