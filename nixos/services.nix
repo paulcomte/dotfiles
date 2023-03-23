@@ -33,7 +33,7 @@
 
       videoDrivers = [ "nvidia" ];
 
-      # desktopManager.lumina.enable = true;
+      desktopManager.lumina.enable = true;
 
       displayManager = {
         gdm = {
