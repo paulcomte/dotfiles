@@ -12,6 +12,7 @@
     '';
 
     blueman.enable = true;
+    envfs.enable = true;
 
     zfs.trim.enable = true;
     zfs.autoSnapshot.enable = true;
@@ -31,6 +32,8 @@
       libinput.enable = true;
 
       videoDrivers = [ "nvidia" ];
+
+      # desktopManager.lumina.enable = true;
 
       displayManager = {
         gdm = {
@@ -53,4 +56,5 @@
       pulse.enable = true;
     };
   };
+
 }

@@ -20,7 +20,8 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.efi.efiSysMountPoint = "/boot/";
 
+  boot.zfs.devNodes = "/dev/disk/by-uuid";
+
   boot.supportedFilesystems = [ "zfs" ];
   boot.zfs.requestEncryptionCredentials = true;
-
 }

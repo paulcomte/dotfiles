@@ -6,4 +6,5 @@
   programs.fish.enable = true;
   programs.sway.enable = true;
   programs.light.enable = true;
+  programs.nix-ld.enable = true;
 }
