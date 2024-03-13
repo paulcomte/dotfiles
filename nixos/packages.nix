@@ -14,7 +14,7 @@
     htop # utils
     # editors
     helix
-    rnix-lsp # nix lsp
+    #rnix-lsp # nix lsp
     # password manager
     bitwarden
     # audio mixer
@@ -36,13 +36,13 @@
     xorg.xrandr
   ];
 
-  fonts.fonts = with pkgs; [
+  fonts.packages = with pkgs; [
     anonymousPro
     unifont
     noto-fonts-emoji
     (nerdfonts.override { fonts = [ "FiraCode" "JetBrainsMono" "UbuntuMono" ]; })
   ];
 
-  fonts.enableDefaultFonts = false;
+  fonts.enableDefaultPackages = false;
 
 }

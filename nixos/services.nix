@@ -17,12 +17,12 @@
     zfs.autoSnapshot.enable = true;
     zfs.autoScrub.enable = true;
     mullvad-vpn.enable = true;
-    #asusd.enable = true;
+    asusd.enable = true;
     #supergfxd.enable = true;
 
     xserver = {
       enable = true;
-      layout = "fr";
+      xkb.layout = "fr";
       libinput.enable = true;
 
       videoDrivers = [ "nvidia" ];
