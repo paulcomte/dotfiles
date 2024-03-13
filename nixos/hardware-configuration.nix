@@ -12,6 +12,11 @@
   boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "usbhid" "usb_storage" "sd_mod" ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
+  
+  fileSystems."/boot" =
+    { device = "/dev/disk/by-uuid/31C8-E489";
+      fsType = "vfat";
+    };
 
   fileSystems."/" =
     { device = "rpool/root/nixos";
@@ -21,11 +26,6 @@
   fileSystems."/home" =
     { device = "rpool/home";
       fsType = "zfs";
-    };
-
-  fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/31C8-E489";
-      fsType = "vfat";
     };
 
   swapDevices = [ { device = "/dev/disk/by-uuid/24b45d01-c212-4d59-b774-3891024265d7"; } ];

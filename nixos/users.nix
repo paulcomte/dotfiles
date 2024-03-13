@@ -5,6 +5,6 @@
 
   users.users.paul = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "video" "libvirtd" "audio" "light" ];
+    extraGroups = [ "wheel" "video" "libvirtd" "networkmanager" "audio" "light" ];
   };
 }

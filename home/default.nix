@@ -105,7 +105,7 @@
       delta.enable = true;
       ignores = [ "*~" "*result*" ".direnv" ];
       signing = {
-        key = "D7719A405EE1B315";
+        key = "14D30F7D0393F9CEC79B7B5FD7719A405EE1B315";
         signByDefault = true;
       };
       userEmail = "paul.codepro@gmail.com";

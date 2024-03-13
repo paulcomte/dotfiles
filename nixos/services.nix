@@ -12,13 +12,19 @@
     '';
 
     blueman.enable = true;
+    envfs.enable = true;
 
     zfs.trim.enable = true;
     zfs.autoSnapshot.enable = true;
     zfs.autoScrub.enable = true;
     mullvad-vpn.enable = true;
     asusd.enable = true;
-    #supergfxd.enable = true;
+    supergfxd.enable = true;
+
+    usbmuxd = {
+      enable = true;
+      package = pkgs.usbmuxd2;
+    };
 
     xserver = {
       enable = true;
@@ -26,6 +32,8 @@
       libinput.enable = true;
 
       videoDrivers = [ "nvidia" ];
+
+      desktopManager.lumina.enable = true;
 
       displayManager = {
         gdm = {
@@ -48,4 +56,5 @@
       pulse.enable = true;
     };
   };
+
 }

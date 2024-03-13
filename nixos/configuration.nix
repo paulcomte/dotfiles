@@ -1,6 +1,7 @@
 { config, pkgs, ... }:
 
 {
+
   hardware.opengl = {
     enable = true;
   };
@@ -22,7 +23,7 @@
   environment.etc."supergfxd.conf" = {
     mode = "0644";
     source = (pkgs.formats.json { }).generate "supergfxd.conf" {
-      mode = "Integrated";
+      mode = "Hybrid";
       vfio_enable = true;
       vfio_save = false;
       always_reboot = false;
