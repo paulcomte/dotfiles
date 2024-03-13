@@ -7,6 +7,8 @@
   };
 
   hardware.bluetooth.enable = true;
+  # hardware.pulseaudio.enable = true;
+  # hardware.pulseaudio.support32Bit = true;
 
   # Set your time zone.
   time.timeZone = "Europe/Paris";
